@@ -1,0 +1,19 @@
+.nav-link{
+    font-family:Popins,sans-serif;
+    position:relative;
+    width:max-content;
+    font-family: cursive;
+}
+.nav-link::after{
+    content: '';
+    background:linear-gradient(to right,red,blue);
+    height:2px;
+    width:0%;
+     position:absolute;
+     bottom:0;
+     left:0;
+    transition: 500ms;
+}
+.nav-link:hover::after{
+    width:100%;
+}
