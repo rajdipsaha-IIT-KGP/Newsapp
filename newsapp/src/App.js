@@ -5,10 +5,11 @@ import News from './Components/News';
 
 import LoadingBar from "react-top-loading-bar";
 import {
-  BrowserRouter as Router,
-  Routes, // Updated import
+  HashRouter as Router, // Change BrowserRouter to HashRouter
+  Routes,
   Route,
 } from "react-router-dom";
+
 
 export default class App extends Component {
   state={
